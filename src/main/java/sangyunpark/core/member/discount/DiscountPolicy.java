@@ -1,6 +1,5 @@
-package sangyunpark.core.discount;
+package sangyunpark.core.member.discount;
 
-import sangyunpark.core.member.Grade;
 import sangyunpark.core.member.Member;
 
 public interface DiscountPolicy {
