@@ -6,8 +6,8 @@ import sangyunpark.core.member.MemberRepository;
 import sangyunpark.core.member.MemberService;
 import sangyunpark.core.member.MemberServiceImpl;
 import sangyunpark.core.member.MemoryMemberRepository;
-import sangyunpark.core.member.discount.DiscountPolicy;
-import sangyunpark.core.member.discount.RateDiscountPolicy;
+import sangyunpark.core.discount.DiscountPolicy;
+import sangyunpark.core.discount.RateDiscountPolicy;
 import sangyunpark.core.order.OrderService;
 import sangyunpark.core.order.OrderServiceImpl;
 

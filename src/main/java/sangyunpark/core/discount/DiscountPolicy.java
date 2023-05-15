@@ -1,4 +1,4 @@
-package sangyunpark.core.member.discount;
+package sangyunpark.core.discount;
 
 import sangyunpark.core.member.Member;
 
