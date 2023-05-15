@@ -2,7 +2,11 @@ package sangyunpark.core.member;
 
 public class MemberServiceImpl implements MemberService{
 
-    private MemberRepository memberRepository = new MemoryMemberRepository(); // 구현체 의존
+    private final MemberRepository memberRepository; // 추상화에만 의존
+
+    public MemberServiceImpl(MemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
+    }
 
     @Override
     public void join(Member member) { // 회원 가입

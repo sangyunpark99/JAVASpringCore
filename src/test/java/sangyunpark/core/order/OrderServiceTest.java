@@ -1,13 +1,22 @@
 package sangyunpark.core.order;
 
 import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import sangyunpark.core.AppConfig;
 import sangyunpark.core.member.*;
 
 public class OrderServiceTest {
 
-    OrderService orderService = new OrderServiceImpl();
-    MemberService memberService = new MemberServiceImpl();
+    OrderService orderService;
+    MemberService memberService;
+
+    @BeforeEach
+    public void beforeEach(){
+        AppConfig appConfig = new AppConfig();
+        orderService = appConfig.orderService();
+        memberService = appConfig.memberService();
+    }
 
     @Test
     void createOrder(){

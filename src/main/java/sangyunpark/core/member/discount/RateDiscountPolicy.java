@@ -1,9 +1,16 @@
 package sangyunpark.core.member.discount;
+import sangyunpark.core.member.Grade;
 import sangyunpark.core.member.Member;
 
 public class RateDiscountPolicy implements DiscountPolicy {
+
+    private int discountPercent = 10;
     @Override
     public int discount(Member member, int price) {
-        return 0;
+        if(member.getGrade() == Grade.VIP){
+            return price * discountPercent / 100;
+        }else {
+            return 0;
+        }
     }
 }
