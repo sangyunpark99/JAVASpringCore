@@ -1,9 +1,10 @@
-package sangyunpark.core.member.discount;
+package sangyunpark.core.discount;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import sangyunpark.core.member.Grade;
 import sangyunpark.core.member.Member;
+import sangyunpark.core.member.discount.RateDiscountPolicy;
 
 import static org.assertj.core.api.Assertions.*;
 
