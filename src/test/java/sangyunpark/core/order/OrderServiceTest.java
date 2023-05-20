@@ -4,6 +4,7 @@ import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import sangyunpark.core.AppConfig;
+import sangyunpark.core.discount.FixDiscountPolicy;
 import sangyunpark.core.member.*;
 
 public class OrderServiceTest {
