@@ -4,6 +4,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.FilterType;
+import sangyunpark.core.discount.DiscountPolicy;
+import sangyunpark.core.discount.FixDiscountPolicy;
 import sangyunpark.core.member.MemoryMemberRepository;
 
 @Configuration
@@ -14,6 +16,11 @@ public class AutoAppConfig {
     @Bean(name="memoryMemberRepository")
     MemoryMemberRepository memberRepository(){
         return new MemoryMemberRepository();
+    }
+
+    @Bean
+    DiscountPolicy fixDiscountPolicy(){
+        return new FixDiscountPolicy();
     }
 }
 

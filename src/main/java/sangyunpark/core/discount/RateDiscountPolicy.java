@@ -1,9 +1,11 @@
 package sangyunpark.core.discount;
 import org.springframework.stereotype.Component;
+import sangyunpark.core.annotation.MainDiscountPolicy;
 import sangyunpark.core.member.Grade;
 import sangyunpark.core.member.Member;
 
 @Component
+@MainDiscountPolicy
 public class RateDiscountPolicy implements DiscountPolicy {
 
     private int discountPercent = 10;
