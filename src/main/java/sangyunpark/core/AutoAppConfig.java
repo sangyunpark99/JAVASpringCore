@@ -13,10 +13,6 @@ import sangyunpark.core.member.MemoryMemberRepository;
         excludeFilters = @ComponentScan.Filter(type = FilterType.ANNOTATION, classes = Configuration.class)
 )
 public class AutoAppConfig {
-    @Bean(name="memoryMemberRepository")
-    MemoryMemberRepository memberRepository(){
-        return new MemoryMemberRepository();
-    }
 
     @Bean
     DiscountPolicy fixDiscountPolicy(){
